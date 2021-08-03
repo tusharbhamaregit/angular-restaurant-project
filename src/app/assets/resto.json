@@ -1,0 +1,19 @@
+{
+  "restaurants": [
+    {
+      "id": "1",
+      "name": "Tom",
+      "address": "Cruise"
+    },
+    {
+      "id": "2",
+      "name": "Maria",
+      "address": "Sharapova"
+    },
+    {
+      "id": "3",
+      "name": "James",
+      "address": "Bond"
+    }
+  ]
+}
