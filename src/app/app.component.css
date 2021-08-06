@@ -1,3 +1,8 @@
 p {
   font-family: Lato;
 }
+
+.pad {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

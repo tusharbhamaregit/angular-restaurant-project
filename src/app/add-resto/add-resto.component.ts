@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-add-resto',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-resto.component.css']
 })
 export class AddRestoComponent implements OnInit {
+  name: string;
+  email: string;
+  address: string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  addResto = new FormGroup({
+    name: new FormControl(''),
+    email: new FormControl(''),
+    address: new FormControl('')
+  });
+
+  ngOnInit() {}
+
+  collectResto() {
+    console.log(this.addResto.value);
   }
-
 }
