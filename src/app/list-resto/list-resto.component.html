@@ -6,10 +6,10 @@
 <div class="row">
   <div class="col-lg-4 mb-4" *ngFor="let resto of restaurantData">
     <div class="card">
-      <img class="card-img-top" src="" alt="">
+      <img class="card-img-top" src="{{resto.url}}" alt="">
 
       <div class="card-body">
-        <h5 class="card-title">{{resto.login}}</h5>
+        <h5 class="card-title">{{resto.name}}</h5>
         <p class="card-text">
           {{resto.description}}
         </p>

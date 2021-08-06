@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RestaurantsService } from '../services/restaurants.service';
+import { restos } from '../assets/resto';
 
 @Component({
   selector: 'app-list-resto',
@@ -11,9 +12,6 @@ export class ListRestoComponent implements OnInit {
   constructor(private resto: RestaurantsService) {}
 
   ngOnInit() {
-    this.resto
-      .getRestaurants()
-      .subscribe(res => (this.restaurantData = res as any));
-    //this.resto.getRestaurants();
+    this.restaurantData = restos[0].restaurants;
   }
 }
